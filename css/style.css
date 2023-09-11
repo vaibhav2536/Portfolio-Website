@@ -1,0 +1,236 @@
+/* CSS for header section */
+
+.hello{
+    border-radius: 50%;
+}
+
+#header{
+    background-color: #DDF6E1;
+}
+
+.nav-pills > .btn{
+    height: 40px;
+}
+
+/* CSS for hero section */
+
+#hero{
+    background-color: #A1F7E0;
+}
+
+.parent_1{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 1fr;
+    margin: 0px auto 0 0px;
+}
+
+.my_photo{
+    border-radius: 50%;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+
+#hero h2{
+    font-family: 'Dancing Script', cursive;
+    color:crimson;
+    margin-top: 10px;
+    font-size: 70px;
+}
+
+
+.intro_txt>p{
+    font-size: 20px;
+    font-family: serif;
+    text-align: justify;
+    color: black;
+}
+
+/* CSS for resume section */
+
+#resume{
+    background-color: #9DE0BB;
+}
+
+
+.parent_2{
+    display: grid;
+    grid-template-columns: 500px 300px 500px;
+    grid-template-rows: 300px 300px 80px;
+    margin: 0px auto 0px auto;
+}
+
+#resume h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:crimson;
+    font-size: 70px;
+}
+
+/* CSS for 1st column of grid */
+
+.resume_txt_1 h3{
+    margin-top: 50px;
+    margin-left: 110px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resume_txt_1 h5{
+    text-align: justify;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.resume_txt_1 p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+/* CSS for 2nd column of grid */
+
+.resume_txt_2 h3{
+    margin-top: 45px;
+    margin-left: 90px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resume_txt_2 p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+a{
+    color:darkred;
+}
+
+/* CSS for 3rd column of grid */
+
+.resume_txt_3 h3{
+    margin-top: 45px;
+    margin-left: 250px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.resume_txt_3 p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+
+/* CSS for additional section  */
+
+#additional{
+    background-color: #A1F7AF;
+}
+
+#additional h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:crimson;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+.lead{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+#additional img{
+    margin-top: 150px;
+}
+
+
+/* CSS for contact me section */
+
+#contact_me{
+    background-color: #A6ED9A;
+    margin-top: 0px;
+}
+
+.text-body-secondary{
+    font-size: 30px;
+    margin-left: 100px;
+    font-family: serif;
+    color: crimson;
+}
+
+#contact_me h5{
+    margin-left: 200px;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Adjust header navigation on smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-pills {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-pills .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Adjust hero section on smaller screens */
+@media screen and (max-width: 768px) {
+    .parent_1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .my_photo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    #hero h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    .intro_txt > p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Adjust resume section on smaller screens */
+@media screen and (max-width: 768px) {
+    .parent_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    /* ... (Adjust other styles as needed) */
+}
+
+/* Adjust additional section on smaller screens */
+@media screen and (max-width: 768px) {
+    /* ... (Adjust styles for additional section) */
+}
+
+/* Adjust contact me section on smaller screens */
+@media screen and (max-width: 768px) {
+    /* ... (Adjust styles for contact me section) */
+}
